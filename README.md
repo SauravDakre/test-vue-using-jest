@@ -1,6 +1,6 @@
 # test-vue-using-jest
 
-> The Vue.js project demonstrates how to use jest for it unit and integration testing.
+> The Vue.js project demonstrates how to use jest for its unit and integration testing.
 
 ## Build Setup
 
