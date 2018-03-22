@@ -1,7 +1,7 @@
 import {shallow} from '@vue/test-utils';
 import { mount } from '@vue/test-utils';
 import todo from './todo.vue';
-// import sinon from 'sinon'
+
 let todoComponent;
 let todoUi;
 
@@ -10,7 +10,7 @@ describe('todo.spec.js - unit test', function(){
         todoComponent = shallow(todo)
     })
 
-    it('initially tasks should be empty', function(){
+    it('initially tasks array should be empty', function(){
         expect(todoComponent.vm.tasks.length).toBe(0);
     })
 
@@ -43,7 +43,10 @@ describe('todo.spec.js - integration test', function(){
         input.trigger('input')
         todoUi.find('button').trigger('click');
         expect(todoUi.contains('li')).toBe(true)
-        expect(todoComponent.vm.tasks[0]).toEqual('task1');
-        // console.log(todoComponent.vm.tasks)
+    })
+
+    it('should match snapshot', function(){
+        expect(todoComponent.element).toBeDefined();
+        expect(todoComponent.element).toMatchSnapshot();
     })
 })

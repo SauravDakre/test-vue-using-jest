@@ -1,6 +1,6 @@
-# webpack-simple-jest
+# test-vue-using-jest
 
-> A Vue.js project
+> The Vue.js project demonstrates how to use jest for it unit and integration testing.
 
 ## Build Setup
 
@@ -13,6 +13,7 @@ npm run dev
 
 # build for production with minification
 npm run build
-```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# test the Vue application using jest
+npm test
+```

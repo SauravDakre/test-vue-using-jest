@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todo.spec.js - integration test should match snapshot 1`] = `
+<div>
+  <h2>
+    Todo Component
+  </h2>
+   
+  <input
+    type="text"
+  />
+   
+  <button>
+    add
+  </button>
+   
+  <ul>
+    <li>
+      task1
+    </li>
+  </ul>
+</div>
+`;
